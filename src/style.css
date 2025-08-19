@@ -507,6 +507,10 @@ img {
   .email-container {
     padding: 50px 20px;
   }
+  .highlight-heading {
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -537,6 +541,10 @@ img {
   .header-hero {
     padding: 60px 20px;
   }
+   .highlight-heading {
+    font-size: 40px;
+    line-height: 48px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -555,6 +563,10 @@ img {
   
   .email-container {
     padding: 60px 30px;
+  }
+  .highlight-heading {
+    font-size: 48px;
+    line-height: 56px;
   }
 }
 
@@ -606,5 +618,35 @@ img {
     overflow: hidden;
     position: fixed;
     width: 100%;
+  }
+  .highlight-heading {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .email-container {
+    width: 100%;
+    padding: 30px 15px;
+  }
+
+  .email-features {
+    grid-template-columns: 1fr; 
+    gap: 15px;
+  }
+
+  .email-feature {
+    flex-direction: row; 
+    align-items: flex-start;
+  }
+
+  .email-icon {
+    font-size: 30px; 
+  }
+
+  .email-heading {
+    font-size: 16px;
+  }
+
+  .email-desc {
+    font-size: 13px;
   }
 }
