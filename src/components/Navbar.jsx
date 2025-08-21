@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import trulyinboxLogo from '../assets/icons/trulyinbox-logo.png'
 const Navbar = () => {
   const [fixed, setFixed] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -24,24 +24,21 @@ const Navbar = () => {
         <div className="container">
           <div className="logo-container">
             <img
-              width="138"
-              height="36"
-              src="https://www.trulyinbox.com/wp-content/uploads/2025/01/logo.svg"
+              width="60"
+              height="50"
+              src={trulyinboxLogo}
               className="custom-logo"
               alt="TrulyInbox Logo"
               decoding="async"
             />
           </div>
 
-          {/* Mobile toggle button */}
           <button
             className="mobile-menu-toggle"
             onClick={() => setMenuOpen(!menuOpen)}
           >
             ☰
           </button>
-
-          {/* nav links */}
           <nav className={`nav-links ${menuOpen ? "mobile-open" : ""}`}>
             <a href="#" className="nav-link">Blog</a>
             <a href="#" className="nav-link">Knowledge Base</a>

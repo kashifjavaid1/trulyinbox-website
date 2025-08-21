@@ -1,14 +1,18 @@
 import React from "react";
+import trulyinboxLogo from '../assets/icons/trulyinbox-logo.png'
 
 const Footer = () => {
   return (
     <footer className="main-footer">
         {/* Logo + Social */}
-        <div className="footer-top">
+        <div className="container">
+          <div className="footer-top">
           <a href="#" className="footer-logo">
             <img
-              src="https://www.trulyinbox.com/wp-content/uploads/2025/01/footer-logo.svg"
+              src={trulyinboxLogo}
               alt="TrulyInbox"
+               width="60"
+              height="50"
             />
           </a>
 
@@ -54,6 +58,7 @@ const Footer = () => {
 
         <div className="footer-bottom">
           <p>©2025 TrulyInbox. All rights reserved</p>
+        </div>
         </div>
     </footer>
   );
