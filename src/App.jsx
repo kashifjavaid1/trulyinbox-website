@@ -7,7 +7,6 @@ import FeaturesSection from "./FeaturesSection";
 
 const App = () => {
   const [openIndex, setOpenIndex] = useState(null);
-
 const faqs = [
   {
     question: "How does email warm-up work?",
